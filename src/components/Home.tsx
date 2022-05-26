@@ -35,9 +35,9 @@ export const Home:FC=(props)=>
                 </div>
             <div className="header" style={{display:"block", position:"fixed",top:"0",width:"100%"}}>
                 <h3 className="ProjectHeading" style={{ display: "inline", position: "absolute", left: "0", padding: "8px" }}>Covid Dashboard</h3>
-                    <a href="/table">Table</a>
-                     <a href="/graph">Graphs</a>
-                    <a href="/">Home</a>
+                    <a href="./table">Table</a>
+                     <a href="./graph">Graphs</a>
+                    <a href="./">Home</a>
             </div>
             <GlobalStats NewConfirmed={summaryData?.Global.NewConfirmed} NewRecovered={summaryData?.Global.NewRecovered} NewDeaths={summaryData?.Global.NewDeaths} TotalConfirmed={summaryData?.Global.TotalConfirmed} TotalDeaths={summaryData?.Global.TotalDeaths} TotalRecovered={summaryData?.Global.TotalRecovered}/>
             <Graphs />
