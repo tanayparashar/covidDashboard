@@ -27,7 +27,7 @@ export const CountryTable:FC<any>=memo((props)=>{
     }
     return(
         <div>
-        <div>
+            <div style={{ color: "#373D3F", display: "flex", justifyContent: "center", margin: "50px" }}>
             <form onSubmit={handleSubmit} >
                 <label>Enter country:
                     <input

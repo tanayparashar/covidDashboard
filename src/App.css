@@ -69,6 +69,65 @@ form td:last-child {
 form * {
   font-size: 28px;
 }
+.ProjectHeadind{
+    position: absolute;
+    right: 0;
+    height: 80px;
+    border-bottom: 1px solid var(--c-border-primary);
+    background-color: var(--c-background-primary);
+}
+.header {
+  overflow: hidden;
+  background-color: #3c3c3c;
+  padding: 20px 10px;
+}
+h1{
+color: rgb(16, 31, 45);
+text-align: center;
+}
+h3 {
+  color: aliceblue;
+  text-align: left;
+  margin: 25 px;
+}
+h4{
+  color: aliceblue;
+  text-align: center;
+}
+.globalDataWrapper{
+  display: flex;
+  justify-content: space-around;
+  grid-template-columns: 3fr 3fr;
+}
+.GlobalDataBox{
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+    width: 320px;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #3c3c3c;
+    border: 2px solid rgb(255, 12, 12);
+    margin: 50px;
+}
+.GlobalDataBox:hover {
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2);
+}
+.graphPage {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  grid-auto-flow: column;
+}
+a {
+  display: block;
+  padding: 8px;
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
