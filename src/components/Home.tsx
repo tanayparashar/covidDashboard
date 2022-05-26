@@ -29,8 +29,8 @@ export const Home:FC=(props)=>
                 <div>
                     <h1>Hello, React Router!</h1>
                     <Routes>
-                    <Route path="/graph" element={<Graphs />} />
-                    <Route path="/table" element={<CountryTable summaryData={summaryData} setSummaryData={setSummaryData} />} />
+                    <Route path="./graph" element={<Graphs />} />
+                    <Route path="./table" element={<CountryTable summaryData={summaryData} setSummaryData={setSummaryData} />} />
                     </Routes>
                 </div>
             <div className="header" style={{display:"block", position:"fixed",top:"0",width:"100%"}}>
