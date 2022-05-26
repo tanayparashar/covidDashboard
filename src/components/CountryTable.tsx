@@ -41,7 +41,8 @@ export const CountryTable:FC<any>=memo((props)=>{
             </form>
         </div>
         <div className="app-container">
-            {summaryData?
+            
+                {summaryData?.Countries.length>0?
                 <table>
                     <thead>
                         <tr>
@@ -63,7 +64,7 @@ export const CountryTable:FC<any>=memo((props)=>{
                             </tr>
                         ))}
                     </tbody>
-                </table>:""
+                </table>:"Not Found"
             }
         </div>
         </div>
