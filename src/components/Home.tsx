@@ -1,15 +1,13 @@
-import { useEffect, useState,useRef } from "react";
+import { useEffect, useState} from "react";
 import React, { FC } from 'react';
 import { GlobalStats } from "./GlabalStats";
 import { CountryTable } from "./CountryTable";
 import { StatsData } from "../interfaces/interfaces"
 import {Graphs} from "./Graphs"
-import { BrowserRouter,Routes, Route, Link } from "react-router-dom";
+import { Routes, Route} from "react-router-dom";
 
-export const Home:FC=(props)=>
+export const Home:FC=()=>
 {
-    const myRef = useRef<HTMLHeadingElement>();
-    const executeScroll = () => myRef.current.scrollIntoView({ behavior: 'smooth' })
     const [summaryData, setSummaryData] = useState <StatsData|null>(null);
     async function reqSummaryData() {
         var requestOptions: RequestInit = {

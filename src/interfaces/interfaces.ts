@@ -27,3 +27,7 @@ export interface ICountryData{
     TotalRecovered: number;
     Date: string;
 }
+export interface ITable{
+    summaryData:StatsData,
+    setSummaryData(summaryData:{}):any,
+}

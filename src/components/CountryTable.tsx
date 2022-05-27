@@ -1,6 +1,6 @@
-import {FC, useEffect, useState,memo} from "react";
-import { ICountryData } from "../interfaces/interfaces";
-export const CountryTable:FC<any>=memo((props)=>{
+import {FC, useState} from "react";
+import { ICountryData , ITable} from "../interfaces/interfaces";
+export const CountryTable:FC<ITable>=(props)=>{
     const {summaryData,setSummaryData}=props;
     const [countryName,setcountyName]=useState("");
     function handleSubmit(e){
@@ -13,7 +13,7 @@ export const CountryTable:FC<any>=memo((props)=>{
         setcountyName(e.target.value)
     }
     function onKeyUp(e){
-        if(e.keyCode==8)
+        if(e.keyCode===8)
         {
         var requestOptions: RequestInit = {
             method: 'GET',
@@ -69,4 +69,4 @@ export const CountryTable:FC<any>=memo((props)=>{
         </div>
         </div>
     );
-})
+}
